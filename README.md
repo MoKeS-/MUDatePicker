@@ -62,6 +62,7 @@ and add it to your view
  //Select the today date on the picker
     [datePicker showDateOnPicker:[NSDate new]];
     [self.view addSubview:datePicker];
+}
 
 ```
 
