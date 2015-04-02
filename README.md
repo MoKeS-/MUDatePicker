@@ -15,6 +15,10 @@ A real customizable DatePicker for iOS that shows the Day name without the times
 
 ...Soon
 
+## Genesis
+My company's customers needed a simple way to choose a date in some form in my company's app. The classic UIDateTimePicker can show a date selection, but doesn't show the DAY NAME of the chosen date. There is an option, in this UIDateTimePicker to show the day name, but it will also show a TIME picker, which is not useful for my customers.
+Furthermore, the classic iOS DateTimePicker doesn't allow user to easily customize (color, font) the classic picker.  
+
 ## Basic Usage
 
 Import the class header.
