@@ -69,7 +69,7 @@ Use of the delegate
 
 ## Demo
 
-Build and run the `DatePickerTest` project in Xcode to see `MUDatePicker` in action.
+Build and run the `MUDatePickerExample` project in Xcode to see the `MUDatePicker` in action.
 Have fun. Make it faster. Fork and send pull requests. Figure out hooks for customization.
 
 ## Contact
@@ -79,4 +79,7 @@ Maxime Urban
 - https://github.com/MoKeS-
 - https://twitter.com/MoKeS_
 - maxime.urban@gmail.com
+
+
+It is my first repo on Github, had some trouble to get things properly online. Sorry for all the wrong commits.
 
