@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DatePickerTest.xcscheme</key>
+		<key>MUDatePickerExample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5003175D1ACBEE8E00FBF045</key>
+		<key>50C3EADC1ACD5686007F72DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>500317761ACBEE8E00FBF045</key>
+		<key>50C3EAF51ACD5686007F72DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

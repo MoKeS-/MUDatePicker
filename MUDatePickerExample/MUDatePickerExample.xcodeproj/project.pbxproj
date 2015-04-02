@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C3EAE31ACD5686007F72DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C3EAE21ACD5686007F72DC /* main.m */; };
+		50C3EAE61ACD5686007F72DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C3EAE51ACD5686007F72DC /* AppDelegate.m */; };
+		50C3EAE91ACD5686007F72DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C3EAE81ACD5686007F72DC /* ViewController.m */; };
+		50C3EAEC1ACD5686007F72DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C3EAEA1ACD5686007F72DC /* Main.storyboard */; };
+		50C3EAEE1ACD5686007F72DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C3EAED1ACD5686007F72DC /* Images.xcassets */; };
+		50C3EAF11ACD5686007F72DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C3EAEF1ACD5686007F72DC /* LaunchScreen.xib */; };
+		50C3EAFD1ACD5686007F72DC /* MUDatePickerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C3EAFC1ACD5686007F72DC /* MUDatePickerExampleTests.m */; };
+		50C3EB081ACD56B3007F72DC /* MUDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C3EB071ACD56B3007F72DC /* MUDatePicker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50C3EAF71ACD5686007F72DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C3EAD51ACD5686007F72DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C3EADC1ACD5686007F72DC;
+			remoteInfo = MUDatePickerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50C3EADD1ACD5686007F72DC /* MUDatePickerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MUDatePickerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C3EAE11ACD5686007F72DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C3EAE21ACD5686007F72DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50C3EAE41ACD5686007F72DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50C3EAE51ACD5686007F72DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50C3EAE71ACD5686007F72DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		50C3EAE81ACD5686007F72DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		50C3EAEB1ACD5686007F72DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50C3EAED1ACD5686007F72DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		50C3EAF01ACD5686007F72DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		50C3EAF61ACD5686007F72DC /* MUDatePickerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MUDatePickerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C3EAFB1ACD5686007F72DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C3EAFC1ACD5686007F72DC /* MUDatePickerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUDatePickerExampleTests.m; sourceTree = "<group>"; };
+		50C3EB061ACD56B3007F72DC /* MUDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MUDatePicker.h; path = ../../Sources/MUDatePicker.h; sourceTree = "<group>"; };
+		50C3EB071ACD56B3007F72DC /* MUDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MUDatePicker.m; path = ../../Sources/MUDatePicker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C3EADA1ACD5686007F72DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C3EAF31ACD5686007F72DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C3EAD41ACD5686007F72DC = {
+			isa = PBXGroup;
+			children = (
+				50C3EADF1ACD5686007F72DC /* MUDatePickerExample */,
+				50C3EAF91ACD5686007F72DC /* MUDatePickerExampleTests */,
+				50C3EADE1ACD5686007F72DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50C3EADE1ACD5686007F72DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C3EADD1ACD5686007F72DC /* MUDatePickerExample.app */,
+				50C3EAF61ACD5686007F72DC /* MUDatePickerExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C3EADF1ACD5686007F72DC /* MUDatePickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				50C3EB061ACD56B3007F72DC /* MUDatePicker.h */,
+				50C3EB071ACD56B3007F72DC /* MUDatePicker.m */,
+				50C3EAE41ACD5686007F72DC /* AppDelegate.h */,
+				50C3EAE51ACD5686007F72DC /* AppDelegate.m */,
+				50C3EAE71ACD5686007F72DC /* ViewController.h */,
+				50C3EAE81ACD5686007F72DC /* ViewController.m */,
+				50C3EAEA1ACD5686007F72DC /* Main.storyboard */,
+				50C3EAED1ACD5686007F72DC /* Images.xcassets */,
+				50C3EAEF1ACD5686007F72DC /* LaunchScreen.xib */,
+				50C3EAE01ACD5686007F72DC /* Supporting Files */,
+			);
+			path = MUDatePickerExample;
+			sourceTree = "<group>";
+		};
+		50C3EAE01ACD5686007F72DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C3EAE11ACD5686007F72DC /* Info.plist */,
+				50C3EAE21ACD5686007F72DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50C3EAF91ACD5686007F72DC /* MUDatePickerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				50C3EAFC1ACD5686007F72DC /* MUDatePickerExampleTests.m */,
+				50C3EAFA1ACD5686007F72DC /* Supporting Files */,
+			);
+			path = MUDatePickerExampleTests;
+			sourceTree = "<group>";
+		};
+		50C3EAFA1ACD5686007F72DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C3EAFB1ACD5686007F72DC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C3EADC1ACD5686007F72DC /* MUDatePickerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C3EB001ACD5686007F72DC /* Build configuration list for PBXNativeTarget "MUDatePickerExample" */;
+			buildPhases = (
+				50C3EAD91ACD5686007F72DC /* Sources */,
+				50C3EADA1ACD5686007F72DC /* Frameworks */,
+				50C3EADB1ACD5686007F72DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MUDatePickerExample;
+			productName = MUDatePickerExample;
+			productReference = 50C3EADD1ACD5686007F72DC /* MUDatePickerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50C3EAF51ACD5686007F72DC /* MUDatePickerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C3EB031ACD5686007F72DC /* Build configuration list for PBXNativeTarget "MUDatePickerExampleTests" */;
+			buildPhases = (
+				50C3EAF21ACD5686007F72DC /* Sources */,
+				50C3EAF31ACD5686007F72DC /* Frameworks */,
+				50C3EAF41ACD5686007F72DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C3EAF81ACD5686007F72DC /* PBXTargetDependency */,
+			);
+			name = MUDatePickerExampleTests;
+			productName = MUDatePickerExampleTests;
+			productReference = 50C3EAF61ACD5686007F72DC /* MUDatePickerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C3EAD51ACD5686007F72DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Maxime Urban";
+				TargetAttributes = {
+					50C3EADC1ACD5686007F72DC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					50C3EAF51ACD5686007F72DC = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 50C3EADC1ACD5686007F72DC;
+					};
+				};
+			};
+			buildConfigurationList = 50C3EAD81ACD5686007F72DC /* Build configuration list for PBXProject "MUDatePickerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50C3EAD41ACD5686007F72DC;
+			productRefGroup = 50C3EADE1ACD5686007F72DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C3EADC1ACD5686007F72DC /* MUDatePickerExample */,
+				50C3EAF51ACD5686007F72DC /* MUDatePickerExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C3EADB1ACD5686007F72DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C3EAEC1ACD5686007F72DC /* Main.storyboard in Resources */,
+				50C3EAF11ACD5686007F72DC /* LaunchScreen.xib in Resources */,
+				50C3EAEE1ACD5686007F72DC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C3EAF41ACD5686007F72DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C3EAD91ACD5686007F72DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C3EAE91ACD5686007F72DC /* ViewController.m in Sources */,
+				50C3EAE61ACD5686007F72DC /* AppDelegate.m in Sources */,
+				50C3EAE31ACD5686007F72DC /* main.m in Sources */,
+				50C3EB081ACD56B3007F72DC /* MUDatePicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C3EAF21ACD5686007F72DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C3EAFD1ACD5686007F72DC /* MUDatePickerExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50C3EAF81ACD5686007F72DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C3EADC1ACD5686007F72DC /* MUDatePickerExample */;
+			targetProxy = 50C3EAF71ACD5686007F72DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50C3EAEA1ACD5686007F72DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C3EAEB1ACD5686007F72DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50C3EAEF1ACD5686007F72DC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C3EAF01ACD5686007F72DC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50C3EAFE1ACD5686007F72DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50C3EAFF1ACD5686007F72DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50C3EB011ACD5686007F72DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = MUDatePickerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50C3EB021ACD5686007F72DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = MUDatePickerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50C3EB041ACD5686007F72DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MUDatePickerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MUDatePickerExample.app/MUDatePickerExample";
+			};
+			name = Debug;
+		};
+		50C3EB051ACD5686007F72DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MUDatePickerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MUDatePickerExample.app/MUDatePickerExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C3EAD81ACD5686007F72DC /* Build configuration list for PBXProject "MUDatePickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C3EAFE1ACD5686007F72DC /* Debug */,
+				50C3EAFF1ACD5686007F72DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C3EB001ACD5686007F72DC /* Build configuration list for PBXNativeTarget "MUDatePickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C3EB011ACD5686007F72DC /* Debug */,
+				50C3EB021ACD5686007F72DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50C3EB031ACD5686007F72DC /* Build configuration list for PBXNativeTarget "MUDatePickerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C3EB041ACD5686007F72DC /* Debug */,
+				50C3EB051ACD5686007F72DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50C3EAD51ACD5686007F72DC /* Project object */;
+}

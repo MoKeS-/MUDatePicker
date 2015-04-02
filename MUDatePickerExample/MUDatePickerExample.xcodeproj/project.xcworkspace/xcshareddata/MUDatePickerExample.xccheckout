@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8DE1206E-EA83-4954-A54B-C1DFB10383E8</string>
+	<string>D314AEBE-FE5B-4C02-AF10-95B03BB88E12</string>
 	<key>IDESourceControlProjectName</key>
-	<string>DatePickerTest</string>
+	<string>MUDatePickerExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F81F6081DD94E3A4AD1B33D853A6772BD2BDCF3D</key>
 		<string>https://github.com/MoKeS-/MUDatePicker.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DatePickerTest.xcodeproj</string>
+	<string>MUDatePickerExample/MUDatePickerExample.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F81F6081DD94E3A4AD1B33D853A6772BD2BDCF3D</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/MoKeS-/MUDatePicker.git</string>

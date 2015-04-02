@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5003175D1ACBEE8E00FBF045"
-               BuildableName = "DatePickerTest.app"
-               BlueprintName = "DatePickerTest"
-               ReferencedContainer = "container:DatePickerTest.xcodeproj">
+               BlueprintIdentifier = "50C3EADC1ACD5686007F72DC"
+               BuildableName = "MUDatePickerExample.app"
+               BlueprintName = "MUDatePickerExample"
+               ReferencedContainer = "container:MUDatePickerExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "500317761ACBEE8E00FBF045"
-               BuildableName = "DatePickerTestTests.xctest"
-               BlueprintName = "DatePickerTestTests"
-               ReferencedContainer = "container:DatePickerTest.xcodeproj">
+               BlueprintIdentifier = "50C3EAF51ACD5686007F72DC"
+               BuildableName = "MUDatePickerExampleTests.xctest"
+               BlueprintName = "MUDatePickerExampleTests"
+               ReferencedContainer = "container:MUDatePickerExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "500317761ACBEE8E00FBF045"
-               BuildableName = "DatePickerTestTests.xctest"
-               BlueprintName = "DatePickerTestTests"
-               ReferencedContainer = "container:DatePickerTest.xcodeproj">
+               BlueprintIdentifier = "50C3EAF51ACD5686007F72DC"
+               BuildableName = "MUDatePickerExampleTests.xctest"
+               BlueprintName = "MUDatePickerExampleTests"
+               ReferencedContainer = "container:MUDatePickerExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5003175D1ACBEE8E00FBF045"
-            BuildableName = "DatePickerTest.app"
-            BlueprintName = "DatePickerTest"
-            ReferencedContainer = "container:DatePickerTest.xcodeproj">
+            BlueprintIdentifier = "50C3EADC1ACD5686007F72DC"
+            BuildableName = "MUDatePickerExample.app"
+            BlueprintName = "MUDatePickerExample"
+            ReferencedContainer = "container:MUDatePickerExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,18 +76,13 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5003175D1ACBEE8E00FBF045"
-            BuildableName = "DatePickerTest.app"
-            BlueprintName = "DatePickerTest"
-            ReferencedContainer = "container:DatePickerTest.xcodeproj">
+            BlueprintIdentifier = "50C3EADC1ACD5686007F72DC"
+            BuildableName = "MUDatePickerExample.app"
+            BlueprintName = "MUDatePickerExample"
+            ReferencedContainer = "container:MUDatePickerExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
-         <AdditionalOption
-            key = "NSZombieEnabled"
-            value = "YES"
-            isEnabled = "YES">
-         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
@@ -100,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5003175D1ACBEE8E00FBF045"
-            BuildableName = "DatePickerTest.app"
-            BlueprintName = "DatePickerTest"
-            ReferencedContainer = "container:DatePickerTest.xcodeproj">
+            BlueprintIdentifier = "50C3EADC1ACD5686007F72DC"
+            BuildableName = "MUDatePickerExample.app"
+            BlueprintName = "MUDatePickerExample"
+            ReferencedContainer = "container:MUDatePickerExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
