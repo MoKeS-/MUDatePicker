@@ -13,19 +13,8 @@
 		5003176D1ACBEE8E00FBF045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5003176B1ACBEE8E00FBF045 /* Main.storyboard */; };
 		5003176F1ACBEE8E00FBF045 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5003176E1ACBEE8E00FBF045 /* Images.xcassets */; };
 		500317721ACBEE8E00FBF045 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500317701ACBEE8E00FBF045 /* LaunchScreen.xib */; };
-		5003177E1ACBEE8E00FBF045 /* DatePickerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5003177D1ACBEE8E00FBF045 /* DatePickerTestTests.m */; };
 		50C3EAC01ACD4FDA007F72DC /* MUDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C3EABF1ACD4FDA007F72DC /* MUDatePicker.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		500317781ACBEE8E00FBF045 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 500317561ACBEE8E00FBF045 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5003175D1ACBEE8E00FBF045;
-			remoteInfo = DatePickerTest;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5003175E1ACBEE8E00FBF045 /* DatePickerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePickerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,22 +27,12 @@
 		5003176C1ACBEE8E00FBF045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5003176E1ACBEE8E00FBF045 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		500317711ACBEE8E00FBF045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		500317771ACBEE8E00FBF045 /* DatePickerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatePickerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5003177C1ACBEE8E00FBF045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5003177D1ACBEE8E00FBF045 /* DatePickerTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerTestTests.m; sourceTree = "<group>"; };
 		50C3EABE1ACD4FDA007F72DC /* MUDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MUDatePicker.h; path = Sources/MUDatePicker.h; sourceTree = SOURCE_ROOT; };
 		50C3EABF1ACD4FDA007F72DC /* MUDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MUDatePicker.m; path = Sources/MUDatePicker.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5003175B1ACBEE8E00FBF045 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		500317741ACBEE8E00FBF045 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				500317601ACBEE8E00FBF045 /* DatePickerTest */,
-				5003177A1ACBEE8E00FBF045 /* DatePickerTestTests */,
 				5003175F1ACBEE8E00FBF045 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				5003175E1ACBEE8E00FBF045 /* DatePickerTest.app */,
-				500317771ACBEE8E00FBF045 /* DatePickerTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,23 +84,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5003177A1ACBEE8E00FBF045 /* DatePickerTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				5003177D1ACBEE8E00FBF045 /* DatePickerTestTests.m */,
-				5003177B1ACBEE8E00FBF045 /* Supporting Files */,
-			);
-			path = DatePickerTestTests;
-			sourceTree = "<group>";
-		};
-		5003177B1ACBEE8E00FBF045 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5003177C1ACBEE8E00FBF045 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,24 +104,6 @@
 			productReference = 5003175E1ACBEE8E00FBF045 /* DatePickerTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		500317761ACBEE8E00FBF045 /* DatePickerTestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 500317841ACBEE8E00FBF045 /* Build configuration list for PBXNativeTarget "DatePickerTestTests" */;
-			buildPhases = (
-				500317731ACBEE8E00FBF045 /* Sources */,
-				500317741ACBEE8E00FBF045 /* Frameworks */,
-				500317751ACBEE8E00FBF045 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				500317791ACBEE8E00FBF045 /* PBXTargetDependency */,
-			);
-			name = DatePickerTestTests;
-			productName = DatePickerTestTests;
-			productReference = 500317771ACBEE8E00FBF045 /* DatePickerTestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,10 +115,6 @@
 				TargetAttributes = {
 					5003175D1ACBEE8E00FBF045 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					500317761ACBEE8E00FBF045 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 5003175D1ACBEE8E00FBF045;
 					};
 				};
 			};
@@ -194,7 +132,6 @@
 			projectRoot = "";
 			targets = (
 				5003175D1ACBEE8E00FBF045 /* DatePickerTest */,
-				500317761ACBEE8E00FBF045 /* DatePickerTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,13 +144,6 @@
 				5003176D1ACBEE8E00FBF045 /* Main.storyboard in Resources */,
 				500317721ACBEE8E00FBF045 /* LaunchScreen.xib in Resources */,
 				5003176F1ACBEE8E00FBF045 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		500317751ACBEE8E00FBF045 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,23 +161,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		500317731ACBEE8E00FBF045 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5003177E1ACBEE8E00FBF045 /* DatePickerTestTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		500317791ACBEE8E00FBF045 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5003175D1ACBEE8E00FBF045 /* DatePickerTest */;
-			targetProxy = 500317781ACBEE8E00FBF045 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5003176B1ACBEE8E00FBF045 /* Main.storyboard */ = {
@@ -369,40 +283,6 @@
 			};
 			name = Release;
 		};
-		500317851ACBEE8E00FBF045 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DatePickerTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DatePickerTest.app/DatePickerTest";
-			};
-			name = Debug;
-		};
-		500317861ACBEE8E00FBF045 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DatePickerTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DatePickerTest.app/DatePickerTest";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -420,15 +300,6 @@
 			buildConfigurations = (
 				500317821ACBEE8E00FBF045 /* Debug */,
 				500317831ACBEE8E00FBF045 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		500317841ACBEE8E00FBF045 /* Build configuration list for PBXNativeTarget "DatePickerTestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				500317851ACBEE8E00FBF045 /* Debug */,
-				500317861ACBEE8E00FBF045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
