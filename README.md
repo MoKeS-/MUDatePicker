@@ -2,11 +2,11 @@
 
 
 <p align="center">
-	<img src="Screenshot1.png" alt="Sample">
+	<img src="Screenshot1.PNG" alt="Sample">
 </p>
 
 <p align="center">
-	<img src="Screenshot2.png" alt="Sample">
+	<img src="Screenshot2.PNG" alt="Sample">
 </p>
 
 A real customizable DatePicker for iOS that shows the Day name without the timestamp.
