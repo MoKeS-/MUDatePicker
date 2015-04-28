@@ -47,6 +47,7 @@
     
     [dayName dealloc];
     [_calendar dealloc];
+    [_dateComponents dealloc];
     
     [super dealloc];
 }
@@ -57,6 +58,7 @@
 -(void) initialization {
     super.delegate = self;
     super.dataSource = self;
+    _muPickerMode = DATE;
     _calendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 }
 
@@ -67,16 +69,21 @@
  */
 -(void)showDateOnPicker:(NSDate *)date
 {
-    NSDateComponents *components = [self.calendar
-                                    components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay
-                                    fromDate:date];
+ 
+    _dateComponents = [[self.calendar
+                                    components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour | NSCalendarUnitMinute
+                                    fromDate:date]retain];
     
-
-    [self selectRow:[components day]-1 inComponent:1 animated:YES];
-    [self selectRow:[components month]-1 inComponent:2 animated:YES];
-    [self selectRow:[components year]-1 inComponent:3 animated:YES];
-    [self calcLastDayOfMonth:date];
-    [self calcDayName:date];
+    if(_muPickerMode == TIME) {
+        [self selectRow:[_dateComponents hour] inComponent:0 animated:YES];
+        [self selectRow:[_dateComponents minute] inComponent:1 animated:YES];
+    } else {
+        [self selectRow:[_dateComponents day]-1 inComponent:1 animated:YES];
+        [self selectRow:[_dateComponents month]-1 inComponent:2 animated:YES];
+        [self selectRow:[_dateComponents year]-1 inComponent:3 animated:YES];
+        [self calcLastDayOfMonth:date];
+        [self calcDayName:date];
+    }
 }
 
 /**
@@ -115,35 +122,55 @@
  *  @return the date on the picker
  */
 -(NSDate *)getSelectedDate {
-    NSDateComponents *dateComponent = [[NSDateComponents alloc] init];
-    dateComponent.month =[self selectedRowInComponent:2] + 1 ;
-    dateComponent.year = [self selectedRowInComponent:3] + 1;
-    dateComponent.day = [self selectedRowInComponent:1] + 1;
     
-    return [_calendar dateFromComponents:dateComponent];
+    if(_muPickerMode == TIME ) {
+        _dateComponents.hour = [self selectedRowInComponent:0];
+        _dateComponents.minute = [self selectedRowInComponent:1];
+    } else {
+        _dateComponents.month =[self selectedRowInComponent:2] + 1 ;
+        _dateComponents.year = [self selectedRowInComponent:3] + 1;
+        _dateComponents.day = [self selectedRowInComponent:1] + 1;
+    }
+
+    return [_calendar dateFromComponents:_dateComponents];
 }
 
 #pragma mark Delegate methods
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 4;
+    if(_muPickerMode == TIME) {
+        return 2;
+    } else {
+        return 4;
+    }
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     NSInteger ret;
     
-    switch (component) {
-        case 0 :
-            ret = 1;
-            break;
-        case 1 :
-            ret = 31;
-            break;
-        case 2 :
-            ret = 12;
-            break;
-        default :
-            ret = 10000;
-            break;
+    if(_muPickerMode == TIME) {
+        switch (component) {
+            case 0 :
+                ret = 24;
+                break;
+            default :
+                ret = 60;
+                break;
+        }
+    } else {
+        switch (component) {
+            case 0 :
+                ret = 1;
+                break;
+            case 1 :
+                ret = 31;
+                break;
+            case 2 :
+                ret = 12;
+                break;
+            default :
+                ret = 10000;
+                break;
+        }
     }
     return ret;
 }
@@ -151,22 +178,36 @@
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
     
-    switch (component) {
-        case 0:
-            return self.columnDayNameWidth;
-            break;
-        case 1:
-            return self.columnDayWidth;
-            break;
-        case 2:
-            return self.columnMonthWidth;
-            break;
-        case 3:
-            return self.columnYearWidth;
-            break;
-        default:
-            return 100;
-            break;
+    if(_muPickerMode == TIME) {
+        switch (component) {
+            case 0:
+                return self.columnHourWidth;
+                break;
+            case 1:
+                return self.columnMinuteWidth;
+                break;
+            default:
+                return 100;
+                break;
+        }
+    } else {
+        switch (component) {
+            case 0:
+                return self.columnDayNameWidth;
+                break;
+            case 1:
+                return self.columnDayWidth;
+                break;
+            case 2:
+                return self.columnMonthWidth;
+                break;
+            case 3:
+                return self.columnYearWidth;
+                break;
+            default:
+                return 100;
+                break;
+        }
     }
 }
 
@@ -177,20 +218,20 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
-    NSDateComponents *dateComponent = [[NSDateComponents alloc] init];
-    dateComponent.month =[self selectedRowInComponent:2] + 1 ;
-    dateComponent.year = [self selectedRowInComponent:3] + 1;
-    [self calcLastDayOfMonth:[_calendar dateFromComponents:dateComponent]];
-    
-    dateComponent.day = [self selectedRowInComponent:1] + 1;
+    if (_muPickerMode == DATE) {
+        _dateComponents.month =[self selectedRowInComponent:2] + 1 ;
+        _dateComponents.year = [self selectedRowInComponent:3] + 1;
+        [self calcLastDayOfMonth:[_calendar dateFromComponents:_dateComponents]];
+        
+        _dateComponents.day = [self selectedRowInComponent:1] + 1;
 
-    if(dateComponent.day > lastDay) {
-        [self selectRow:lastDay-1 inComponent:1 animated:YES];
-        dateComponent.day = lastDay-1;
+        if(_dateComponents.day > lastDay) {
+            [self selectRow:lastDay-1 inComponent:1 animated:YES];
+            _dateComponents.day = lastDay-1;
+        }
+        
+        [self calcDayName:[_calendar dateFromComponents:_dateComponents]];
     }
-    
-    [self calcDayName:[_calendar dateFromComponents:dateComponent]];
-    [dateComponent release];
 }
 
 -(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
@@ -206,31 +247,42 @@
         
     }
     labelDate.enabled = YES;
+    
     NSDateFormatter *df = [[[NSDateFormatter alloc] init] autorelease];
     
-    switch (component) {
-        case 0:
-            labelDate.text = dayName;
-            labelDate.textAlignment = NSTextAlignmentLeft;
-            break;
-        case 1:
-            labelDate.text = [NSString stringWithFormat:@"%ld", row + 1];
-            if((row+1) > lastDay) {
-                labelDate.enabled = NO;
-            }
-            break;
-        case 2 :
-            if(IDIOM == IPAD) {
-                labelDate.text = [[df monthSymbols] objectAtIndex:row];
-            } else {
-                labelDate.text = [[df shortMonthSymbols] objectAtIndex:row];
-            }
-            break;
-        case 3 :
-            labelDate.text = [NSString stringWithFormat:@"%ld", row + 1 ];
-            break;
-        default:
-            break;
+    if(_muPickerMode == TIME) {
+        
+        NSString *time = [NSString stringWithFormat:@"%ld",row];
+        if(row <10) {
+            time = [NSString stringWithFormat:@"0%ld",row];
+        }
+        labelDate.text = time;
+        labelDate.textAlignment = NSTextAlignmentCenter;
+    } else {
+        switch (component) {
+            case 0:
+                labelDate.text = dayName;
+                labelDate.textAlignment = NSTextAlignmentLeft;
+                break;
+            case 1:
+                labelDate.text = [NSString stringWithFormat:@"%ld", row+1];
+                if((row+1) > lastDay) {
+                    labelDate.enabled = NO;
+                }
+                break;
+            case 2 :
+                if(IDIOM == IPAD) {
+                    labelDate.text = [[df monthSymbols] objectAtIndex:row];
+                } else {
+                    labelDate.text = [[df shortMonthSymbols] objectAtIndex:row];
+                }
+                break;
+            case 3 :
+                labelDate.text = [NSString stringWithFormat:@"%ld", row + 1 ];
+                break;
+            default:
+                break;
+        }
     }
     
     [labelDate sizeToFit];

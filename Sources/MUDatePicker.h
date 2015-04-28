@@ -25,6 +25,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum _MUPickerMode {
+    DATE,
+    TIME
+} MUPickerMode;
+
 @interface MUDatePicker : UIPickerView <UIPickerViewDelegate, UIPickerViewDataSource>
 {
     //String containing the current day name
@@ -33,6 +38,10 @@
     //Number of the last day for the current month
     NSInteger lastDay;
 }
+
+@property (nonatomic, assign) MUPickerMode muPickerMode;
+
+@property (nonatomic, retain) NSDateComponents *dateComponents;
 
 // Calendar used in the PickerView
 @property (nonatomic, copy) NSCalendar *calendar;
@@ -46,6 +55,9 @@
 @property(nonatomic, assign) NSInteger columnDayWidth;
 @property(nonatomic, assign) NSInteger columnMonthWidth;
 @property(nonatomic, assign) NSInteger columnYearWidth;
+
+@property(nonatomic, assign) NSInteger columnHourWidth;
+@property(nonatomic, assign) NSInteger columnMinuteWidth;
 
 
 
