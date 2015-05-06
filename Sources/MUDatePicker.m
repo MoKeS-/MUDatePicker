@@ -219,10 +219,15 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
     if (_muPickerMode == DATE) {
+        
+        NSDateComponents *dateComponent = [[NSDateComponents alloc] init];
+        dateComponent.month =[self selectedRowInComponent:2] + 1 ;
+        dateComponent.year = [self selectedRowInComponent:3] + 1;
+        [self calcLastDayOfMonth:[_calendar dateFromComponents:dateComponent]];
+        [dateComponent release];
+        
         _dateComponents.month =[self selectedRowInComponent:2] + 1 ;
         _dateComponents.year = [self selectedRowInComponent:3] + 1;
-        [self calcLastDayOfMonth:[_calendar dateFromComponents:_dateComponents]];
-        
         _dateComponents.day = [self selectedRowInComponent:1] + 1;
 
         if(_dateComponents.day > lastDay) {
@@ -252,9 +257,9 @@
     
     if(_muPickerMode == TIME) {
         
-        NSString *time = [NSString stringWithFormat:@"%ld",row];
+        NSString *time = [NSString stringWithFormat:@"%ld",(long)row];
         if(row <10) {
-            time = [NSString stringWithFormat:@"0%ld",row];
+            time = [NSString stringWithFormat:@"0%ld",(long)row];
         }
         labelDate.text = time;
         labelDate.textAlignment = NSTextAlignmentCenter;
@@ -265,7 +270,7 @@
                 labelDate.textAlignment = NSTextAlignmentLeft;
                 break;
             case 1:
-                labelDate.text = [NSString stringWithFormat:@"%ld", row+1];
+                labelDate.text = [NSString stringWithFormat:@"%ld", (long)(row+1)];
                 if((row+1) > lastDay) {
                     labelDate.enabled = NO;
                 }
@@ -278,7 +283,7 @@
                 }
                 break;
             case 3 :
-                labelDate.text = [NSString stringWithFormat:@"%ld", row + 1 ];
+                labelDate.text = [NSString stringWithFormat:@"%ld", (long)(row + 1) ];
                 break;
             default:
                 break;
